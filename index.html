@@ -204,6 +204,106 @@
             
               
                 
+                <a class="post-title-link" href="/2016/04/25/header/" itemprop="url">
+                  PHP HTTP首部操作
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-25T21:11:50+08:00" content="2016-04-25">
+              2016-04-25
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/04/25/header/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/04/25/header/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="利用php控制首部"><a href="#利用php控制首部" class="headerlink" title="利用php控制首部"></a>利用php控制首部</h1><p>header()函数会立即从服务器向浏览器发送一个首部，而且这个函数必须在向浏览器发送任何具体内容之前调用。header()函数调用应放在php脚本中所有html代码之前。 注：首部内部为键值对儿组合。</p>
+<h2 id="利用首部进行认证"><a href="#利用首部进行认证" class="headerlink" title="利用首部进行认证"></a>利用首部进行认证</h2><p>两段代码创建认证首部<br><code>header(&#39;HTTP/1.1 401 Unauthorized&#39;)</code>;<br><code>header(&#39;WWW-Authenticate: Basic realm=&quot;&quot;&#39;)</code>;      </p>
+<h2 id="利用首部重定向"><a href="#利用首部重定向" class="headerlink" title="利用首部重定向"></a>利用首部重定向</h2><p><code>header(&#39;Location&#39;: http://devshy.com)</code>;</p>
+<h2 id="定时刷新并重定向"><a href="#定时刷新并重定向" class="headerlink" title="定时刷新并重定向"></a>定时刷新并重定向</h2><p><code>header(&#39;Refresh:5; url=http://devshy.com&#39;)</code>;</p>
+<h2 id="内容首部"><a href="#内容首部" class="headerlink" title="内容首部"></a>内容首部</h2><p><code>header(&#39;Content-Type: text/plain&#39;)</code>;</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/04/24/studyHexo/" itemprop="url">
                   PHP之文件操作
                 </a>
@@ -808,7 +908,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -825,7 +925,7 @@
           
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
